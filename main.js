@@ -7,7 +7,7 @@ inputScreen.addEventListener('input', ()=>{
 function clr(){
   inputScreen.value = '';
   outputScreen.value = '';
-  inputScreen.style.fontSize = '48px';
+  inputScreen.style.fontSize = '45px';
 }
 function del(){
   inputScreen.value = inputScreen.value.slice(0,-1);
@@ -60,14 +60,13 @@ if (inputScreen.value.length < '47') {
 if (inputScreen.value.length < '16') {
   inputScreen.style.fontSize = '30px'
 }
-if (inputScreen.value.length < '10') {
-  inputScreen.style.fontSize = '48px'
+if (inputScreen.value.length < '11') {
+  inputScreen.style.fontSize = '45px'
 }
-
 }
 function lengthIncrease(){
 inputScreen.style.transition = 'font-size 0.2s linear';
-if (inputScreen.value.length > '9') {
+if (inputScreen.value.length > '10') {
   inputScreen.style.fontSize = '30px'
 }
 if (inputScreen.value.length > '15') {

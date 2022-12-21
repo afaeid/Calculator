@@ -3,7 +3,7 @@ body{width: 100%;min-height: 100vh;background-color: #EEF0FF;display: flex;align
 button{border:none;outline:none;background: transparent;/*border:1px solid black;*/padding: 5px;border-radius: 4px}
 .calculator-cover{width: 330px;background-color:#fff;padding: 10px;border-radius: 20px;padding: 20px 10px;}
 .calculator-cover .cal-inpt{margin-bottom: 20px;border-radius: 10px;border:1px solid #000;}
-.calculator-cover .cal-inpt textarea{width: 100%;outline:none;padding: 10px;height:70px;font-size: 48px;overflow-x: auto;font-family: 'Courier New', Courier, monospace;font-weight: bold;caret-color: #949494;border:none;background: transparent; /* white-space: nowrap */}
+.calculator-cover .cal-inpt textarea{width: 100%;outline:none;padding: 10px;height:70px;font-size: 45px;overflow-x: auto;font-family: 'Courier New', Courier, monospace;font-weight: bold;caret-color: #949494;border:none;background: transparent; /* white-space: nowrap */}
 .calculator-cover .cal-inpt input{width: 100%;background: transparent;outline: none; border: none;padding: 10px;text-align: right;font-family: 'Courier New', Courier, monospace;font-size: 20px;font-weight: bold;};
 .calculator-cover .cal-btns{width: 100%;display: flex;align-items: center;justify-content: space-between;flex-wrap:wrap;flex-direction: column}
 .calculator-cover .cal-btns button{width: 22%;height: 40px; margin: 5px 3px;padding:10px; border-radius: 50px;font-size: 18px;position: relative;z-index: 1;font-family: 'Courier New', Courier, monospace;font-weight: bolder;}
