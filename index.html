@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="calculator-cover">
+  <div class="cal-inpt">
+    <textarea readonly placeholder="0"></textarea>
+    <input readonly type="text">
+  </div>
+  <div class="cal-btns">
+    <button onclick="clr()">AC</button>
+    <button onclick="del()">DEL</button>
+    <button onclick="display('%')">%</button>
+    <button onclick="root()">√</button>
+    <button onclick="display('1')">1</button>
+    <button onclick="display('2')">2</button>
+    <button onclick="display('3')">3</button>
+    <button onclick="display('+')">+</button>
+    <button onclick="display('4')">4</button>
+    <button onclick="display('5')">5</button>
+    <button onclick="display('6')">6</button>
+    <button onclick="display('-')">—</button>
+    <button onclick="display('7')">7</button>
+    <button onclick="display('8')">8</button>
+    <button onclick="display('9')">9</button>
+    <button onclick="display('*')">×</button>
+    <button onclick="display('0')">0</button>
+    <button onclick="display('.')">.</button>
+    <button onclick="display('**')">x <sup>x</sup></button>
+    <button onclick="display('/')">÷</button>
+    <button onclick="display('(')">(</button>
+    <button onclick="display(')')">)</button>
+    <button onclick="ans()">ANS</button>
+    <button onclick="calculate ()">=</button>
+  </div>
+  <div class="cal-footer">
+<a href="rules.html">View operating guide</a>
+  </div>
+</div> 
+<script src="main.js"></script>
+</body>
+</html>
