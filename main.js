@@ -1,15 +1,10 @@
 const inputScreen = document.querySelector('.cal-inpt textarea');
 const outputScreen = document.querySelector('.cal-inpt input');
-inputScreen.addEventListener('input', ()=>{
-  lengthDecrease();
-  lengthIncrease();
-})
-function clr(element){
-// inputScreen.value = '';
+var ansValue;
 
+function clr(element){
   inputScreen.value = '';
-outputScreen.style.visibility = 'hidden';
-  // outputScreen.value = '';
+  outputScreen.value = '';
   inputScreen.style.fontSize = '45px';
 }
 function del(){
@@ -21,39 +16,32 @@ function display(num){
  lengthIncrease();
 }
 function ans(){
- if(outputScreen.value != 0){
-   inputScreen.value += outputScreen.value;
-   
- }else{
-   alert('Please, calculate a problem at first.')
-}
+   inputScreen.value += ansValue;
  lengthDecrease();
  lengthIncrease();
-  inputScreen.classList.remove('showAns')
 
 }
 function calculate (){
  if(inputScreen.value != 0){
   try{
     outputScreen.value = eval(inputScreen.value);
-    outputScreen.style.visibility = 'visible';
+    ansValue = outputScreen.value;
   }catch (err){
-    clr();
     alert('Invalid number');
   }
  }
 }
 function root(){
-if(outputScreen.value != 0 && inputScreen.value != 0){
+if(outputScreen.value == eval(inputScreen.value) ** 0.5){
   inputScreen.value = outputScreen.value;
 }
  if(inputScreen.value != 0){
   try{
  calResult = eval(inputScreen.value);
  outputScreen.value = calResult ** 0.5;
- outputScreen.style.visibility = 'visible';
-  }catch(err){
-    clr();
+ ansValue = outputScreen.value;
+  }
+  catch(err){
     alert('Invalid number')
   }
  }
