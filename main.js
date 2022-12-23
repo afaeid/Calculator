@@ -30,23 +30,18 @@ function calculate (){
   }
  }
 }
-function root(){
-if(outputScreen.value == eval(inputScreen.value) ** 0.5){
-  inputScreen.value = outputScreen.value;
+
+function root(num){
+if (eval(inputScreen.value) == outputScreen.value) {
+  inputScreen.value = outputScreen.value + num;
+  outputScreen.value = eval(inputScreen.value);
+}else{
+  inputScreen.value += num;
 }
- if(inputScreen.value != 0){
-  try{
- calResult = eval(inputScreen.value);
- outputScreen.value = calResult ** 0.5;
- ansValue = outputScreen.value;
-  }
-  catch(err){
-    alert('Invalid number')
-  }
- }
- lengthDecrease();
- lengthIncrease();
+lengthDecrease();
+lengthIncrease();
 }
+
 function lengthDecrease(){
 inputScreen.style.transition = 'font-size 0.2s linear';
 if (inputScreen.value.length < '47') {
