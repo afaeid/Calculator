@@ -19,7 +19,6 @@ function ans(){
    inputScreen.value += ansValue;
  lengthDecrease();
  lengthIncrease();
-
 }
 function calculate (){
  if(inputScreen.value != 0){
