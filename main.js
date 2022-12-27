@@ -1,3 +1,4 @@
+/* copyright © All rights reserved by MD Afaeid Sarker*/
 const inputScreen = document.querySelector('.cal-inpt textarea');
 const outputScreen = document.querySelector('.cal-inpt input');
 var ansValue;
@@ -66,3 +67,4 @@ if (inputScreen.value.length > '46') {
   inputScreen.style.fontSize = '18px';
 }  
 }
+/* copyright © All rights reserved by MD Afaeid Sarker*/
