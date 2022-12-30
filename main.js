@@ -10,6 +10,7 @@ function clr(element){
 }
 function del(){
   inputScreen.value = inputScreen.value.slice(0,-1);
+  preCalculate();
   lengthDecrease();
 }
 function display(num){
@@ -18,24 +19,19 @@ function display(num){
  preCalculate();
 }
 function ans(){
- if(ansValue === undefined ){
-inputScreen.value += '';
-alert('Calculate a problem')
- }else{
-   inputScreen.value += ansValue;
-}
+inputScreen.value += ansValue;
  preCalculate();
  lengthDecrease();
  lengthIncrease();
 }
 function preCalculate (){
-outputScreen.style.color = '#757575'
- if(inputScreen.value != 0){
-  try{
-    outputScreen.value = eval(inputScreen.value);
-  }catch (err){
-  }
- }
+outputScreen.style.color = '#757575';
+outputScreen.value = eval(inputScreen.value);
+if(ansValue == undefined){
+  ansValue = '';
+  inputScreen.value = '';
+  outputScreen.value = '';
+}
 }
 function calculate (){
 outputScreen.style.color = '#000'
@@ -50,12 +46,14 @@ outputScreen.style.color = '#000'
 }
 
 function root(num){
-if (eval(inputScreen.value) == outputScreen.value) {
+if (eval(inputScreen.value) == ansValue) {
   inputScreen.value = outputScreen.value + num;
   outputScreen.value = eval(inputScreen.value);
 }else{
   inputScreen.value += num;
 }
+preCalculate();
+console.log(outputScreen.style.color)
 lengthDecrease();
 lengthIncrease();
 }
@@ -84,4 +82,5 @@ if (inputScreen.value.length > '46') {
   inputScreen.style.fontSize = '18px';
 }  
 }
+
 /* copyright © All rights reserved by MD Afaeid Sarker*/
