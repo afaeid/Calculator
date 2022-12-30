@@ -1,5 +1,5 @@
 *{margin: 0;padding: 0;box-sizing: border-box;font-family:sans-serif;}
-body{width: 100%;min-height: 100vh;background-color: #EEF0FF;display: flex;align-items:center;justify-content:center;}
+body{width: 100%;min-height: 100vh;background-color: #EEF0FF;display: flex;align-items:center;justify-content:space-around ;flex-direction: column;text-align: center;}
 button{border:none;outline:none;background: transparent;/*border:1px solid black;*/padding: 5px;border-radius: 4px}
 .calculator-cover{width: 330px;background-color:#fff;padding: 10px;border-radius: 20px;padding: 20px 10px;}
 .calculator-cover .cal-inpt{margin-bottom: 20px;border-radius: 10px;border:1px solid #000;}

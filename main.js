@@ -29,7 +29,7 @@ alert('Calculate a problem')
  lengthIncrease();
 }
 function preCalculate (){
-outputScreen.style.color = '#858687'
+outputScreen.style.color = '#757575'
  if(inputScreen.value != 0){
   try{
     outputScreen.value = eval(inputScreen.value);
