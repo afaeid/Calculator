@@ -15,13 +15,30 @@ function del(){
 function display(num){
  inputScreen.value += num;
  lengthIncrease();
+ preCalculate();
 }
 function ans(){
+ if(ansValue === undefined ){
+inputScreen.value += '';
+alert('Calculate a problem')
+ }else{
    inputScreen.value += ansValue;
+}
+ preCalculate();
  lengthDecrease();
  lengthIncrease();
 }
+function preCalculate (){
+outputScreen.style.color = '#858687'
+ if(inputScreen.value != 0){
+  try{
+    outputScreen.value = eval(inputScreen.value);
+  }catch (err){
+  }
+ }
+}
 function calculate (){
+outputScreen.style.color = '#000'
  if(inputScreen.value != 0){
   try{
     outputScreen.value = eval(inputScreen.value);
