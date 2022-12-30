@@ -17,4 +17,4 @@ button{border:none;outline:none;background: transparent;/*border:1px solid black
 @keyframes hoverAnimation{80%{transform: scale(1);opacity: 90%;}100%{transform: scale(1);opacity: 50%}}
 .cal-footer{text-align:center;height: 25px;font-size: 15px;margin-top: 20px;}
 .cal-footer a {background:#EEF0FF;display: inline-block;text-decoration: none;z-index: 2;color: #000;padding: 8px;border-radius: 20px;font-size: 12px;font-family:'Poppins',sans-serif;}
-.page-footer{position: absolute;bottom:20px;left:0;width: 100%;text-align: center;font-family:'Poppins',sans-serif;font-size: 10px;}
+.page-footer{position: absolute;bottom:20px;left:0;width: 100%;text-align: center;font-family:'Poppins',sans-serif;font-size: 12px;font-weight: bolder;}
