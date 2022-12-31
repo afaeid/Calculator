@@ -20,6 +20,13 @@ function display(num){
 }
 function ans(){
 inputScreen.value += ansValue;
+
+if(ansValue == undefined){
+  ansValue = '';
+  inputScreen.value += '';
+  outputScreen.value = '';
+}
+
  preCalculate();
  lengthDecrease();
  lengthIncrease();
@@ -27,13 +34,8 @@ inputScreen.value += ansValue;
 function preCalculate (){
 outputScreen.style.color = '#757575';
 outputScreen.value = eval(inputScreen.value);
-
-// if(ansValue == undefined){
-//   ansValue = '';
-//   inputScreen.value = '';
-//   outputScreen.value = '';
-// }
-
+lengthDecrease();
+lengthIncrease();
 }
 function calculate (){
 outputScreen.style.color = '#000'
