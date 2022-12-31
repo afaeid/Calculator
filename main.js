@@ -27,11 +27,13 @@ inputScreen.value += ansValue;
 function preCalculate (){
 outputScreen.style.color = '#757575';
 outputScreen.value = eval(inputScreen.value);
-if(ansValue == undefined){
-  ansValue = '';
-  inputScreen.value = '';
-  outputScreen.value = '';
-}
+
+// if(ansValue == undefined){
+//   ansValue = '';
+//   inputScreen.value = '';
+//   outputScreen.value = '';
+// }
+
 }
 function calculate (){
 outputScreen.style.color = '#000'
